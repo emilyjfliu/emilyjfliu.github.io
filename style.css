@@ -1,0 +1,184 @@
+.container {
+  font-family: "Arial Black";
+}
+
+.container.navbar-brand{
+  left: 180px; /* 距离左侧的距离 */
+  font-family: "Anton", sans-serif;
+}
+
+.nav-item {
+  left: 580px; /* 距离左侧的距离 */
+  font-family: "Ysabeau SC", sans-serif;
+  font-size: 130%;
+}
+.custom-btn-container {
+    position: absolute;
+    top: 10px; /* 距离顶部的距离 */
+    right: 20px; /* 距离右侧的距离 */
+    display: flex; /* 使用 Flex 布局 */
+  }
+  .custom-btn1 {
+    background: none; /* 设置按钮背景为透明 */
+    border: none; /* 移除按钮边框 */
+    padding: 0; /* 移除按钮内边距 */
+    margin-right: 5px; /* 设置按钮间距 */
+  }
+  .custom-btn2 {
+    background: none; /* 设置按钮背景为透明 */
+    border: none; /* 移除按钮边框 */
+    padding: 0; /* 移除按钮内边距 */
+    margin-right: 5px; /* 设置按钮间距 */
+  }
+  .custom-btn1 img {
+    width: 60px; /* 设置图片宽度 */
+    height: auto; /* 保持宽高比 */
+  }
+  .custom-btn2 img {
+    width: 30px; /* 设置图片宽度 */
+    height: auto; /* 保持宽高比 */
+  }
+   .btn btn-primary{
+      top: 100px; /* 距离顶部的距离 */
+    left: 20px; /* 距离右侧的距离 */
+  }
+.carousel {
+  background-color: black;
+}
+  
+  
+  .circle{
+    height: 23vh;
+    width: 23vh;
+   border-radius: 50%;
+   color: #ffffff;
+   font-size: 15px;
+   font-family: 'VT323', monospace;
+   text-transform: uppercase;
+   text-transform: 'Righteous';
+   text-align: center;
+   animation:spin 20s linear infinite ;
+   position: fixed;
+    top: 70%;
+    left: 82%;
+}
+
+span{
+  position: absolute;
+  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+}
+@keyframes spin{
+  0%{
+      transform: rotate(306deg);
+  }
+  100%{
+      transform: rotate(0);
+  }
+}
+
+.content {
+  background-color: black;
+  height: 100vh;
+}
+svg{
+  height: 8vh;
+  width: 8vh;
+   color: #ffffff;
+   position: fixed;
+    top: 77.5%;
+    left: 85.5%;
+    z-index: 999; /* 设置一个比其他元素更大的 z-index 值 */
+}
+h1 {
+  color: #ffffff;
+  font-family: "Anton", sans-serif;
+  font-size: 1000%;
+  position: absolute;
+  top: 65%; /* 距离顶部的距离 */
+  right: 44%; /* 距离右侧的距离 */
+  display: flex; /* 使用 Flex 布局 */
+}
+h2 {
+  color: #ffffff;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  font-size: 350%;
+  position: absolute;
+  top: 55%; /* 距离顶部的距离 */
+  right: 69%; /* 距离右侧的距离 */
+  display: flex; /* 使用 Flex 布局 */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.content2{
+  background-color: black;
+  font-family: "Anton", sans-serif;;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 100vh;
+}
+
+.carousel{
+  display: flex;
+  width: 90vw;
+  max-width: 900px;
+  height: 400px;
+
+}
+.panel{
+  position: relative;
+    width: 60px;
+    margin: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 30px;
+    /* 保持原有尺寸比例，裁切长边 */
+    background-size: cover;
+    /* 定位背景图像为正中间 */
+    background-position: center;
+    /* 过渡效果：时长 贝塞尔曲线 */
+    transition: 0.5s cubic-bezier(0.05,0.61,0.41,0.95);
+    overflow: hidden;
+}
+.panel h3{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active{
+  flex: 1;
+  margin: 0;
+  border-radius: 40px;
+}
+
+.panel.active h3{
+  opacity: 1;
+  transition: opacity 0.3s ease-in0.4s;
+}
+
+
+.content3 {
+  background-color: black;
+  height: 100vh;
+}
+@media(max-width:520px){
+  .carousel{
+    width: 100vh;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5){
+    display: none;
+  }
+}
