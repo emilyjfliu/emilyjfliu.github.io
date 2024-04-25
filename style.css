@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .container {
   font-family: "Arial Black";
 }
@@ -14,22 +18,33 @@
 }
 .custom-btn-container {
     position: absolute;
-    top: 10px; /* 距离顶部的距离 */
+    top: 15px; /* 距离顶部的距离 */
     right: 20px; /* 距离右侧的距离 */
     display: flex; /* 使用 Flex 布局 */
   }
+  
   .custom-btn1 {
     background: none; /* 设置按钮背景为透明 */
     border: none; /* 移除按钮边框 */
     padding: 0; /* 移除按钮内边距 */
     margin-right: 5px; /* 设置按钮间距 */
+    opacity : 0.8;
+  }
+  .custom-btn1:hover {
+    opacity : 1;
   }
   .custom-btn2 {
     background: none; /* 设置按钮背景为透明 */
     border: none; /* 移除按钮边框 */
     padding: 0; /* 移除按钮内边距 */
     margin-right: 5px; /* 设置按钮间距 */
+    opacity : 0.8;
   }
+
+  .custom-btn2:hover {
+    opacity : 1;
+  }
+
   .custom-btn1 img {
     width: 60px; /* 设置图片宽度 */
     height: auto; /* 保持宽高比 */
@@ -93,23 +108,25 @@ svg{
     left: 85.5%;
     z-index: 999; /* 设置一个比其他元素更大的 z-index 值 */
 }
+
 h1 {
   color: #ffffff;
   font-family: "Anton", sans-serif;
   font-size: 1000%;
-  position: absolute;
+  position:relative;
   top: 65%; /* 距离顶部的距离 */
-  right: 44%; /* 距离右侧的距离 */
+  left: 6%; /* 距离右侧的距离 */
   display: flex; /* 使用 Flex 布局 */
 }
+
 h2 {
   color: #ffffff;
   font-family: "Anton", sans-serif;
   letter-spacing: 3px;
   font-size: 350%;
-  position: absolute;
-  top: 55%; /* 距离顶部的距离 */
-  right: 69%; /* 距离右侧的距离 */
+  position: relative;
+  top: 20%; /* 距离顶部的距离 */
+  left:6.5%; /* 距离右侧的距离 */
   display: flex; /* 使用 Flex 布局 */
 }
 
@@ -182,3 +199,4 @@ h2 {
     display: none;
   }
 }
+
